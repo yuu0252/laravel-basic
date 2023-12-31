@@ -1,10 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-=======
 use App\Http\Controllers\HelloController;
->>>>>>> b32c21d (initial commit)
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +17,5 @@ use App\Http\Controllers\HelloController;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
-=======
 
 Route::get('/hello', [HelloController::class, 'index']);
->>>>>>> b32c21d (initial commit)
