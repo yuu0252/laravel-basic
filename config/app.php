@@ -85,6 +85,8 @@ return [
 
     'locale' => 'en',
 
+    'faker_locale' => 'ja_JP',
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
