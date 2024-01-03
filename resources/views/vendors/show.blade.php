@@ -8,27 +8,24 @@
 </head>
 
 <body>
+    <h1>{{ $vendor->vendor_name }}の商品一覧</h1>
     <table>
         <tr>
             <th>ID</th>
-            <td>{{$product->id}}</td>
-        </tr>
-        <tr>
             <th>商品名</th>
-            <td>{{$product->product_name}}</td>
-        </tr>
-        <tr>
             <th>価格</th>
-            <td>{{$product->price}}</td>
-        </tr>
-        <tr>
             <th>作成日時</th>
-            <td>{{$product->created_at}}</td>
-        </tr>
-        <tr>
             <th>更新日時</th>
-            <td>{{$product->updated_at}}</td>
         </tr>
+        @foreach($products as $product)
+        <tr>
+            <td>{{ $product->id }}</td>
+            <td>{{ $product->product_name }}</td>
+            <td>{{ $product->price }}</td>
+            <td>{{ $product->created_ar }}</td>
+            <td>{{ $product->updated_at }}</td>
+        </tr>
+        @endforeach
     </table>
 </body>
 
